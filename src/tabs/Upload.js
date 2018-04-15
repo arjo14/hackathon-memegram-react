@@ -22,7 +22,7 @@ class Upload extends Component {
                     'Content-Type': 'application/json'
                 }
             };
-            axios.post('http://10.100.25.158:8080/post/save/image', obj.state.selectedFile)
+            axios.post('http://memagram.duckdns.org:8080/post/save/image', obj.state.selectedFile)
                 .then(function (response) {
                     console.log(response.data);
                     let post = {

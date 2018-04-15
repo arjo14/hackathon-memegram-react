@@ -1,0 +1,204 @@
+/*=============================================
+Imports
+=============================================*/
+/* --- Resets --- */
+input[type="text"],
+input[type="password"] {
+    border: none;
+}
+
+/*=============================================
+Variables
+=============================================*/
+/* --- Colors --- */
+/* --- Typography --- */
+/* --- Susy --- */
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* --- Compass --- */
+/*=============================================
+Functions
+=============================================*/
+/*
+* get-color retrieves the color requested
+* from the $colors map
+* @params desired color which must exist in $colors map
+* @return color from $colors map
+*/
+/*=============================================
+Mixins
+=============================================*/
+/*
+* get-font-weight generates the font-weight rule
+* with the get-map for the $font-weights map
+* with $font-weight argument passed in for desired weight
+* @params desired font weight from $font-weights map
+* return generated font-weight rule with desired font weight
+*/
+/*=============================================
+Globals
+=============================================*/
+body {
+    background-color: #F5F5F5;
+}
+
+body html {
+    font-size: 112.5%;
+    line-height: 1.5em;
+}
+
+/*=============================================
+Typography
+=============================================*/
+body {
+    font-family: "proxima-nova-soft", sans-serif;
+}
+
+/*=============================================
+Layout
+=============================================*/
+main {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.login {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+}
+
+.login:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.login .form-title {
+    font-size: 2.72222em;
+    line-height: 1.10204em;
+    font-weight: 500;
+    color: #4c68d7;
+    text-align: center;
+}
+
+.login .login-form {
+    /**
+    * set input fields to
+    * full width and set
+    * height
+    **/
+    /**
+    * set button background color
+    * and remove default
+    * border
+    **/
+    /**
+    * Add space between
+    * form and page title
+    **/
+    margin-top: 15%;
+    /**
+    * remove borders
+    * from username and
+    * password fields
+    **/
+    /**
+    * remove rounded
+    * corners from form
+    * input fields
+    **/
+    /**
+    * Add bottom border
+    * to username input
+    * field
+    **/
+    /**
+    * set username and
+    * password color
+    **/
+    /**
+    * Set button field color
+    * align left
+    **/
+}
+
+.login .login-form input {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    height: 50px;
+}
+
+.login .login-form input[type="text"],
+.login .login-form input[type="password"] {
+    padding-left: 25px;
+}
+
+.login .login-form input[type="button"] {
+    background: #4c68d7;
+    border: none;
+}
+
+.login .login-form input[type="text"],
+.login .login-form input[type="password"] {
+    border: none;
+}
+
+.login .login-form input[type="text"],
+.login .login-form input[type="password"],
+.login .login-form input[type="button"] {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.login .login-form input[type="text"] {
+    border-bottom: 2px solid #D0D0D0;
+}
+
+.login .login-form input[type="text"],
+.login .login-form input[type="password"] {
+    color: #343844;
+}
+
+.login .login-form input[type="button"] {
+    color: #F5F5F5;
+    text-align: center;
+    cursor: pointer;
+}
+
+.profPic {
+    margin-left: 40%;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+
+}
+.fullScreen{
+    height: 90vh;
+}
+.uploaderImg{
+    height: 50px;
+    width: 50px;
+    border-radius: 80%;
+}
+.uploaderName{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 1%;
+    color: #262626;
+    font-weight: 600;
+}
